@@ -1,0 +1,98 @@
+.main {
+    width: 100%;
+    max-width: 1500px;
+    background-color: $yellow;
+    margin: 0 auto;
+    padding: 100px 165px 225px 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+        
+    }
+
+    &__title {
+        font-size: 90px;
+        margin-bottom: 28px;
+        color: $grey;
+        text-align: center;
+    }
+
+    &__text {
+        width: 577px;
+        font-size: 17px;
+        color: $grey;
+        text-align: center;
+        line-height: 24px;
+        margin-bottom: 45px;
+    }
+
+    &__block {
+        display: grid;
+        width: 100%;
+
+        &--1 {
+            grid-template-rows: 262px 262px;
+            grid-template-columns: 772px 371px;
+            row-gap: 28px;
+            column-gap: 28px;
+            margin-bottom: 28px;
+        }
+
+        &--2 {
+            grid-template-rows: 401px;
+            grid-template-columns: repeat(2, 572px);
+            row-gap: 28px;
+            column-gap: 28px;
+        }
+    }
+
+    &__picture {
+        &--1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            // grid-row: 1/3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            // grid-column: 1/2;
+        }
+
+        &--2 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            // grid-row: 1/2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            // grid-column: 2/3;
+        }
+
+        &--3 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            // grid-row: 2/3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            // grid-column: 2/3;
+        }
+
+        &--4 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            // grid-row: 1/2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            // grid-column: 1/2;
+        }
+
+        &--5 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            // grid-row: 1/2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            // grid-column: 2/3;
+        }
+    }
+}
