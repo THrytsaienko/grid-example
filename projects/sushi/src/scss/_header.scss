@@ -1,0 +1,192 @@
+.header {
+    width: 100%;
+    max-width: 1440px;
+    height: 130px;
+    position: fixed;
+    padding: 15px 50px 30px 50px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 127, 127, 0.9));
+    z-index: 100;
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+    }
+
+    &__logo-link {
+        margin-right: 75px;
+        margin-top: -5px;
+        display: block;
+        width: 107px;
+        margin-right: 190px;
+    }
+
+    &__background {
+        background-color: yellowgreen;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        width: 300px;
+        height: 300px;
+    }
+
+    &__menu-btn {
+        width: 28px;
+        height: 24px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+
+        @media screen and (max-width: 800px) {
+            display: block;
+        }
+    }
+
+    &__menu {
+        width: 100%;
+        margin-left: auto;
+        list-style: none;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            margin-top: 200px;
+            width: 300px;
+        }
+    }
+
+    &__item {
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 800px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @media screen and (max-width: 800px) {
+            display: block;
+        }
+    }
+
+    &__menu-icon {
+        position: absolute;
+        top: 12px;
+        right: 0;
+    
+        &,
+        &::before,
+        &::after {
+            width: 28px;
+            height: 2px;
+            background-color: #ffffff;
+            display: inline-block;
+        }
+    
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+    
+        &::before {
+            top: -9px;
+        }
+    
+        &::after {
+            top: 9px;
+        }
+      }
+    
+    &__checkbox:checked ~ &__content {
+        @media screen and (max-width: 800px) {
+            display: block;
+            z-index: 20;
+            align-self: center;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    
+    &__checkbox:checked ~ .header__background {
+        display: block;
+    }
+
+    &__menu-btn:hover &__menu-icon::before {
+        top: -10px;
+    }
+
+    &__menu-btn:hover &__menu-icon::after {
+        top: 10px;
+    }
+
+    &__checkbox:checked + &__menu-btn &__menu-icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__menu-btn &__menu-icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__menu-btn &__menu-icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
+
+.header.active {
+    .header__menu-btn .header__menu-icon {
+        background-color: transparent;
+    }
+
+    .header__menu-icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    .header__menu-icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    .header__content {
+        @media screen and (max-width: 800px) {
+            display: block;
+            z-index: 20;
+            align-self: center;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
