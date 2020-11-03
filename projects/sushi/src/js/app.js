@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('menu-toggle');
+    const btn = document.getElementById('button');
     const header = document.getElementById('header');
     const background = document.querySelector('.header__background');
     btn.addEventListener('click', () => {

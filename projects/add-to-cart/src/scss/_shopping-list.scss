@@ -1,0 +1,17 @@
+.shopping-list {
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        background-color: #ffffff;
+
+        &:nth-child(2n) {
+            background-color: #f4f4f4;
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+    }
+}

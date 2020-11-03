@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Title</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<section class="add-task">
+		  <h1 class="add-task__title">Task List</h1>
+		  <form class="add-task__form" id="task-form">
+			<input class="add-task__input" type="text" id="task" placeholder="New Task" autofocus="autofocus"/>
+			<input class="add-task__btn btn" type="submit" value="Add Task"/>
+		  </form><hr>
+		</section>
+		<section class="tasks">
+		  <h2 class="tasks__title">Tasks</h2>
+		  <input class="tasks__btn btn" type="submit" value="Delete All Tasks"/>
+		  <ul class="tasks__list"></ul>
+		</section>
+	  </div>
+	<script src="js/bundle.js"></script>
+</body>
+</html>

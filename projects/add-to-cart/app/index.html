@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Title</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+        <section class="shopping-list">
+            <h1 class="shopping-list__title">Shopping list</h1>
+            <p class="shopping-list__subtitle">Click on item below to add it to the cart</p>
+            <ul class="shopping-list__data">
+                <li class="shopping-list__item">
+                    <label class="shopping-list__label">
+                        <input type="checkbox" name="Bread" class="shopping-list__checkbox" />
+                        <span class="shopping-list__text">Bread</span>
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+                    <label class="shopping-list__label">
+                        <input type="checkbox" name="Soap" class="shopping-list__checkbox" />
+                        <span class="shopping-list__text">Soap</span>
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+                    <label class="shopping-list__label">
+                        <input type="checkbox" name="Tomato" class="shopping-list__checkbox" />
+                        <span class="shopping-list__text">Tomato</span>
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+                    <label class="shopping-list__label">
+                        <input type="checkbox" name="Lemon" class="shopping-list__checkbox" />
+                        <span class="shopping-list__text">Lemon</span>
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+                    <label class="shopping-list__label">
+                        <input type="checkbox" name="Orange" class="shopping-list__checkbox" />
+                        <span class="shopping-list__text">Orange</span>
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+                    <label class="shopping-list__label">
+                        <input type="checkbox" name="Melow" class="shopping-list__checkbox" />
+                        <span class="shopping-list__text">Melow</span>
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+                    <label class="shopping-list__label">
+                        <input type="checkbox" name="Beer" class="shopping-list__checkbox" />
+                        <span class="shopping-list__text">Beer</span>
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+                    <label class="shopping-list__label">
+                        <input type="checkbox" name="Fish" class="shopping-list__checkbox" />
+                        <span class="shopping-list__text">Fish</span>
+                    </label>
+                </li>
+            </ul>
+        </section>
+        <section class="cart">
+            <h1 class="cart__title">Cart</h1>
+            <div class="cart__container">
+                <div class="cart__icon">
+                    <img src="./img/cart.svg" alt="Cart" class="cart__image">
+                    <span class="cart__counter">3</span>
+                </div>
+                <p class="cart__clear-btn">Delete all</p>
+                <div class="cart__content">
+                    <ul class="cart__list"></ul>
+                </div>
+            </div>
+        </section>
+    </div>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
