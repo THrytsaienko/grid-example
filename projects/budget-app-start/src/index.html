@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Budget app</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/> -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+        <h2 class="title">Expense Tracker</h2>
+        <div class="budget">
+            <h4 class="budget__subtitle">Your Balance</h4>
+            <h1 class="budget__sum" id="balance">$0.00</h1>
+
+            <div class="budget__inc-exp">
+                <div class="budget__block">
+                    <h4>Income</h4>
+                    <p id="money-plus" class="budget__money budget__money--plus">+$0.00</p>
+                </div>
+                <div class="budget__block">
+                    <h4>Expense</h4>
+                    <p id="money-minus" class="budget__money budget__money--minus">-$0.00</p>
+                </div>
+            </div>
+
+            <h3>History</h3>
+            <ul id="list" class="budget__list">
+                <!-- <li class="minus">
+                Cash <span>-$400</span><button class="delete-btn">x</button>
+                </li> -->
+            </ul>
+
+            <h3>Add new transaction</h3>
+            <form id="form">
+                <div class="form-control">
+                    <label class="budget__label" for="text">Description</label>
+                    <input class="budget__input" type="text" id="text" placeholder="Enter text..." />
+                </div>
+                <p class="budget__error" id="desc-error">Description can't be empty</p>
+                <div class="form-control">
+                    <label class="budget__label" for="amount">Amount <span>(negative - expense, positive - income)</span></label>
+                    <input class="budget__input" type="number" id="amount" placeholder="Enter amount..." />
+                </div>
+                <p class="budget__error" id="amount-error">Amount can't be empty</p>
+                <button id="add-btn" class="budget__btn">Add transaction</button>
+            </form>
+        </div>
+    </div>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
